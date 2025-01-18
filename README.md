@@ -1,1 +1,0 @@
-# giraycakr.github.io

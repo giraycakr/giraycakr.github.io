@@ -1,0 +1,260 @@
+:root {
+    --bg-color: #121212;
+    --primary-text-color: #E0E0E0;
+    --secondary-text-color: #BDBDBD;
+    --accent-color: #03DAC6;
+    --card-bg-color: #1E1E1E;
+    --border-color: #272727;
+    --font-family: 'Space Grotesk', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--primary-text-color);
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    padding: 2rem 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+}
+
+nav a {
+    color: var(--primary-text-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--accent-color);
+}
+
+/* About Section */
+#about {
+    padding: 6rem 0;
+    text-align: center;
+}
+
+.about-content h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: var(--secondary-text-color);
+    margin-bottom: 2rem;
+}
+
+.about-text {
+    max-width: 600px;
+    margin: 0 auto 2rem auto;
+    line-height: 1.8;
+}
+
+/* Projects Section */
+#projects {
+    padding: 4rem 0;
+}
+
+#projects h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+}
+
+#projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+.project {
+    background-color: var(--card-bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-color);
+}
+
+.project h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.project .description {
+    color: var(--secondary-text-color);
+    line-height: 1.7;
+    flex-grow: 1;
+}
+
+.project .technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1.5rem 0;
+}
+
+.project .tech-tag {
+    background-color: #2c2c2c;
+    color: var(--secondary-text-color);
+    padding: 0.3rem 0.7rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+}
+
+.project-links a {
+    color: var(--primary-text-color);
+    text-decoration: none;
+    margin-right: 1.5rem;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.project-links a:hover {
+    color: var(--accent-color);
+}
+
+/* Contact Section */
+#contact {
+    padding: 6rem 0;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+#contact p {
+    max-width: 500px;
+    margin: 0 auto 2rem auto;
+    color: var(--secondary-text-color);
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    background-color: transparent;
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+    padding: 0.8rem 1.8rem;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+}
+
+/* Footer */
+footer {
+    padding: 2rem 0;
+    text-align: center;
+    border-top: 1px solid var(--border-color);
+}
+
+.social-links a {
+    color: var(--secondary-text-color);
+    font-size: 1.5rem;
+    margin: 0 1rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--accent-color);
+}
+
+footer p {
+    margin-top: 1rem;
+    color: var(--secondary-text-color);
+    font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .about-content h1 {
+        font-size: 2.5rem;
+    }
+}
+
+/* Back to Top Button */
+.back-to-top-btn {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.5rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
+    transform: translateY(10px);
+}
+
+.back-to-top-btn.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.back-to-top-btn:hover {
+    background-color: #03c4a1; /* A slightly lighter shade for hover */
+    transform: scale(1.1);
+}

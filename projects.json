@@ -1,0 +1,31 @@
+{
+    "projects": [
+        {
+            "title": "AI-Powered Chatbot",
+            "description": "A natural language processing chatbot for customer service, built with Python and TensorFlow.",
+            "technologies": ["Python", "TensorFlow", "Flask"],
+            "links": {
+                "github": "https://github.com/your-username/project-one",
+                "demo": "#"
+            }
+        },
+        {
+            "title": "Data Visualization Dashboard",
+            "description": "An interactive dashboard for visualizing sales data, created with D3.js and React.",
+            "technologies": ["JavaScript", "React", "D3.js"],
+            "links": {
+                "github": "https://github.com/your-username/project-two",
+                "demo": "#"
+            }
+        },
+        {
+            "title": "Machine Learning Model",
+            "description": "A predictive model for stock market analysis using historical data.",
+            "technologies": ["Python", "scikit-learn", "Pandas"],
+            "links": {
+                "github": "https://github.com/your-username/project-three",
+                "demo": "#"
+            }
+        }
+    ]
+}

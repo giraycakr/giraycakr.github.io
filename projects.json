@@ -1,12 +1,12 @@
 {
     "projects": [
         {
-            "title": "AI-Powered Chatbot",
-            "description": "A natural language processing chatbot for customer service, built with Python and TensorFlow.",
-            "technologies": ["Python", "TensorFlow", "Flask"],
+            "title": "Szeged Weather Regression",
+            "description": "A regression analysis on the 2006-2016 Szeged weather dataset to model the relationship between humidity and temperature.",
+            "technologies": ["Python", "Pandas", "Scikit-learn", "Matplotlib", "Seaborn"],
             "links": {
-                "github": "https://github.com/your-username/project-one",
-                "demo": "#"
+                "github": "https://github.com/giraycakr/szeged-weather-regression",
+                "demo": "docs/szeged_regression.html"
             }
         },
         {

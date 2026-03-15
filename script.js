@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const backToTopButton = document.getElementById('back-to-top');
 
     window.addEventListener('scroll', () => {
-        if (window.scrollY > 300) { // Show button after scrolling 300px
+        if (window.scrollY > 300) {
             backToTopButton.classList.add('show');
         } else {
             backToTopButton.classList.remove('show');
@@ -21,14 +21,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 const technologies = project.technologies.map(tech => `<span class="tech-tag">${tech}</span>`).join('');
 
+                let linksHTML = '';
+
+                if (project.links.github) {
+                    linksHTML += `<a href="${project.links.github}" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>`;
+                }
+
+                if (project.links.kaggle) {
+                    linksHTML += `<a href="${project.links.kaggle}" target="_blank" title="Kaggle"><i class="fab fa-kaggle"></i></a>`;
+                }
+
+                if (project.links.demo) {
+                    linksHTML += `<a href="${project.links.demo}" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>`;
+                }
+
                 projectElement.innerHTML = `
                     <h3>${project.title}</h3>
                     <p class="description">${project.description}</p>
                     <div class="technologies">${technologies}</div>
-                    <div class="project-links">
-                        <a href="${project.links.github}" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-                        <a href="${project.links.demo}" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
-                    </div>
+                    <div class="project-links">${linksHTML}</div>
                 `;
                 projectsContainer.appendChild(projectElement);
             });

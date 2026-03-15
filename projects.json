@@ -1,30 +1,36 @@
 {
     "projects": [
         {
+            "title": "Titanic - Machine Learning from Disaster",
+            "description": "End-to-end ML pipeline predicting Titanic passenger survival. Features EDA, feature engineering (FamilySize, Title extraction), and model comparison. XGBoost classifier achieved 78.4% accuracy on Kaggle.",
+            "technologies": [
+                "Python",
+                "Pandas",
+                "Scikit-learn",
+                "XGBoost",
+                "Seaborn",
+                "Matplotlib"
+            ],
+            "links": {
+                "github": "https://github.com/giraycakr/titanic-survival-prediction",
+                "kaggle": "https://www.kaggle.com/code/girayhanakrolu/titanic",
+                "demo": "docs/titanic.html"
+            }
+        },
+        {
             "title": "Szeged Weather Regression",
             "description": "A regression analysis on the 2006-2016 Szeged weather dataset to model the relationship between humidity and temperature.",
-            "technologies": ["Python", "Pandas", "Scikit-learn", "Matplotlib", "Seaborn"],
+            "technologies": [
+                "Python",
+                "Pandas",
+                "Scikit-learn",
+                "Matplotlib",
+                "Seaborn"
+            ],
             "links": {
                 "github": "https://github.com/giraycakr/szeged-weather-regression",
+                "kaggle": "",
                 "demo": "docs/szeged_regression.html"
-            }
-        },
-        {
-            "title": "Data Visualization Dashboard",
-            "description": "An interactive dashboard for visualizing sales data, created with D3.js and React.",
-            "technologies": ["JavaScript", "React", "D3.js"],
-            "links": {
-                "github": "https://github.com/your-username/project-two",
-                "demo": "#"
-            }
-        },
-        {
-            "title": "Machine Learning Model",
-            "description": "A predictive model for stock market analysis using historical data.",
-            "technologies": ["Python", "scikit-learn", "Pandas"],
-            "links": {
-                "github": "https://github.com/your-username/project-three",
-                "demo": "#"
             }
         }
     ]

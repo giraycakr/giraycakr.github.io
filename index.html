@@ -1,84 +1,130 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Personal portfolio of Girayhan Cakiroglu, a computer science student specializing in AI, machine learning, and data science.">
-    <meta name="keywords"
-        content="Girayhan Cakiroglu, portfolio, computer science, AI, machine learning, data science, software developer">
-    <meta property="og:title" content="Girayhan Cakiroglu - Portfolio">
-    <meta property="og:description"
-        content="Personal portfolio of Girayhan Cakiroglu, a computer science student specializing in AI, machine learning, and data science.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://giraycakr.github.io">
-    <title>Girayhan Cakiroglu - Portfolio</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JWGG2DPQHG"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-JWGG2DPQHG');
-    </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Girayhan Sultan Çakıroğlu</title>
+  <meta name="description" content="Girayhan Sultan Çakıroğlu, final-year B.Sc. student in Computer Engineering at Istanbul Medeniyet University. Research interests: interpretable ML, LLM safety and trustworthy ML. Applying to PhD programs for Fall 2027.">
+  <link rel="canonical" href="https://giraycakr.github.io/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://giraycakr.github.io/">
+  <meta property="og:title" content="Girayhan Sultan Çakıroğlu">
+  <meta property="og:description" content="Final-year B.Sc. student in Computer Engineering at Istanbul Medeniyet University. Research interests: interpretable ML, LLM safety and trustworthy ML.">
+  <meta property="og:image" content="https://giraycakr.github.io/assets/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
 </head>
-
 <body>
-    <div class="container">
-        <header>
-            <nav>
-                <div class="logo">Girayhan Cakiroglu</div>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
+  <a class="skip" href="#main">Skip to content</a>
 
-        <main>
-            <section id="about">
-                <div class="about-content">
-                    <h1>Hi, I'm Girayhan Cakiroglu</h1>
-                    <p class="subtitle">Computer Engineering Student</p>
-                    <p class="about-text">I'm passionate about AI, machine learning, and data science. I build projects
-                        that solve real-world problems and push the boundaries of technology.</p>
-                    <a href="resume/CV_Girayhan_Cakiroglu.pdf" download class="btn">Download Resume</a>
-                </div>
-            </section>
-
-            <section id="projects">
-                <h2>Projects</h2>
-                <div id="projects-container"></div>
-            </section>
-
-            <section id="contact">
-                <h2>Get In Touch</h2>
-                <p>Have a project in mind or just want to say hi? I'd love to hear from you.</p>
-                <a href="mailto:girayhancakiroglu7@gmail.com" class="btn">Email Me</a>
-            </section>
-        </main>
-
-        <footer>
-            <div class="social-links">
-                <a href="https://github.com/giraycakr" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/girayhancakiroglu/" target="_blank"><i
-                        class="fab fa-linkedin"></i></a>
-                <a href="https://medium.com/@girayhancakiroglu7" target="_blank"><i class="fab fa-medium"></i></a>
-                <a href="https://www.kaggle.com/girayhanakrolu" target="_blank"><i class="fab fa-kaggle"></i></a>
-            </div>
-            <p>&copy; 2024 Girayhan Cakiroglu. All Rights Reserved.</p>
-        </footer>
+  <header class="head">
+    <!-- Shows assets/photo.jpg when that file exists, otherwise the initials. -->
+    <div class="avatar" role="img" aria-label="Girayhan Sultan Çakıroğlu"><span aria-hidden="true">GSC</span></div>
+    <div>
+      <h1>Girayhan Sultan Çakıroğlu</h1>
+      <p class="muted">Final-year B.Sc. student in Computer Engineering, Istanbul Medeniyet University, Istanbul</p>
+      <ul class="inline">
+        <li><a href="mailto:girayhancakiroglu7@gmail.com">girayhancakiroglu7@gmail.com</a></li>
+        <li><a href="https://github.com/giraycakr">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/girayhancakiroglu/">LinkedIn</a></li>
+      </ul>
+      <nav aria-label="Sections">
+        <ul class="inline">
+          <li><a href="#about">About</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#next">Next steps</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#industry">Industry</a></li>
+          <li><a href="#leadership">Leadership</a></li>
+        </ul>
+      </nav>
     </div>
+  </header>
 
-    <script src="script.js"></script>
-    <a href="#" id="back-to-top" class="back-to-top-btn"><i class="fas fa-arrow-up"></i></a>
+  <main id="main">
+    <section id="about">
+      <h2>About</h2>
+      <div>
+        <p>I am a final-year computer engineering student at Istanbul Medeniyet University, applying to PhD programs for Fall 2027. I am interested in understanding what neural networks actually learn, and in using that understanding to make models safer. My undergraduate research asked a simple question: when data augmentation improves accuracy, what changes inside the model? Answering it taught me how easily a single explanation metric can mislead, which is what draws me to interpretability and LLM safety.</p>
+        <p class="muted">Research interests: Interpretable ML · LLM safety · Trustworthy ML</p>
+      </div>
+    </section>
+
+    <section id="research">
+      <h2>Research</h2>
+      <div>
+        <p class="muted">Manuscript under review (2026). Sep 2025 – Jul 2026.</p>
+        <h3 class="outcome">Do data augmentation methods improve accuracy through the same mechanism?</h3>
+        <p><strong>Question:</strong> Augmentation reliably improves image classification, but why it helps is rarely measured. I compared seven configurations (baseline, traditional, Cutout, Random Erasing, Mixup, CutMix, Mixup+CutMix) on CIFAR-10 and CIFAR-100 with ResNet-18, using four explainability lenses at once: multi-layer Grad-CAM, attention entropy and coverage, silhouette analysis of the 512-dimensional feature space, and occlusion sensitivity. 42 training runs (7 methods × 2 datasets × 3 seeds), all under identical hyperparameters.</p>
+        <p><strong>Findings:</strong></p>
+        <ul class="bullets findings">
+          <li><strong>Methods with similar accuracy work differently inside the model.</strong> On CIFAR-10, Mixup lowers the feature-space silhouette score. CutMix leaves it nearly unchanged but narrows attention onto the object, and its decisions rely on several object regions instead of one.</li>
+          <li><strong>A widely held claim did not survive a ceiling-effect check.</strong> Per-class gains from CutMix look strongly tied to class difficulty on CIFAR-100, but after normalizing by the remaining accuracy gap the relationship vanishes: CutMix closes a similar share of the gap for every class.</li>
+          <li><strong>Some metrics can't separate the methods.</strong> Attention entropy is saturated in this setting, and per-class attention changes don't predict which classes gain the most.</li>
+          <li><strong>Takeaway:</strong> judging augmentation, or any intervention, through a single explanation metric can be misleading. Multiple, complementary measurements are needed.</li>
+        </ul>
+        <p class="note">Paper, code and figures will be linked once the review process allows.</p>
+      </div>
+    </section>
+
+    <section id="next">
+      <h2>What I want to work on next</h2>
+      <div>
+        <p>I want to bring the same multi-angle skepticism to language models: checking whether attribution-based and representation-based explanations of an LLM agree, and using interpretability to detect and understand unsafe behavior such as backdoors, instead of trusting a single signal.</p>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div>
+        <article>
+          <div class="row">
+            <h3>School Bus Tracking and Route Planning Platform</h3>
+            <span class="when">Sole developer, 2026–present</span>
+          </div>
+          <p class="outcome">Built for school transportation companies; licensed annually to two companies and in daily use.</p>
+          <ul class="bullets">
+            <li>RAG assistant over each company's own operational data, using a locally hosted LLM (LangChain, ChromaDB).</li>
+            <li>ML-based flagging of anomalous payment records in the accounting module.</li>
+            <li>Capacitated vehicle routing with OR-Tools and a self-hosted OSRM server.</li>
+          </ul>
+          <p>What I learned: shipping ML to real users means designing for failure cases and data the model has never seen.</p>
+        </article>
+        <article>
+          <div class="row">
+            <h3>Privacy-First Legal Document Analysis Platform</h3>
+            <span class="when">NLP course project, 2025</span>
+          </div>
+          <p class="outcome">Local RAG system for legal contracts that runs fully on-premise; a few law firms use it locally.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="industry">
+      <h2>Industry experience</h2>
+      <ul class="rows">
+        <li class="row"><span>Turkcell, Service Reliability Engineering Intern</span><span class="when">Aug–Sep 2025</span></li>
+        <li class="row"><span>Yıldız Holding, Enterprise Solutions Intern (SAP SD/MM)</span><span class="when">Jun–Jul 2025</span></li>
+        <li class="row"><span>Atlantis Otomasyon, Software Engineering Intern</span><span class="when">Jun–Sep 2024</span></li>
+      </ul>
+    </section>
+
+    <section id="leadership">
+      <h2>Leadership</h2>
+      <div>
+        <div class="row">
+          <h3>Vice President, Google Developer Student Clubs, Marmara University</h3>
+          <span class="when">Nov 2022 – Aug 2023</span>
+        </div>
+        <p>Co-organized technical visits to six companies and two workshops; started "Tech Talk on the Ferry", an event still run by the club.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Last updated: November 2026</p>
+  </footer>
 </body>
-
 </html>

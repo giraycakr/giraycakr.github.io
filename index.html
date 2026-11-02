@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="light dark">
+  <meta name="color-scheme" content="light">
   <title>Girayhan Sultan Çakıroğlu</title>
   <meta name="description" content="Girayhan Sultan Çakıroğlu, final-year B.Sc. student in Computer Engineering at Istanbul Medeniyet University. Research interests: interpretable ML, LLM safety and trustworthy ML. Applying to PhD programs for Fall 2027.">
   <link rel="canonical" href="https://giraycakr.github.io/">
@@ -15,6 +15,7 @@
   <meta property="og:description" content="Final-year B.Sc. student in Computer Engineering at Istanbul Medeniyet University. Research interests: interpretable ML, LLM safety and trustworthy ML.">
   <meta property="og:image" content="https://giraycakr.github.io/assets/og-image.png">
   <meta name="twitter:card" content="summary_large_image">
+  <!-- PLACEHOLDER: Umami analytics script goes here once the website ID is available. -->
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -27,14 +28,15 @@
       <p class="muted">Final-year B.Sc. student in Computer Engineering, Istanbul Medeniyet University, Istanbul</p>
       <ul class="inline">
         <li><a href="mailto:girayhancakiroglu7@gmail.com">girayhancakiroglu7@gmail.com</a></li>
-        <li><a href="https://github.com/giraycakr">GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/girayhancakiroglu/">LinkedIn</a></li>
+        <li><a href="https://github.com/giraycakr" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/girayhancakiroglu/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        <li><a href="cv.pdf">CV (PDF)</a></li>
       </ul>
       <nav aria-label="Sections">
         <ul class="inline">
           <li><a href="#about">About</a></li>
           <li><a href="#research">Research</a></li>
-          <li><a href="#next">Next steps</a></li>
+          <li><a href="#future-work">Future work</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#industry">Industry</a></li>
           <li><a href="#leadership">Leadership</a></li>
@@ -55,8 +57,9 @@
     <section id="research">
       <h2>Research</h2>
       <div>
-        <p class="muted">Manuscript under review (2026). Sep 2025 – Jul 2026.</p>
-        <h3 class="outcome">Do data augmentation methods improve accuracy through the same mechanism?</h3>
+        <h3>A Multi-Metric Explainable Artificial Intelligence Analysis of Data Augmentation Methods on CIFAR-10 and CIFAR-100</h3>
+        <p class="muted">Under review, 2026. First author, with advisor Asst. Prof. Ertürk Erdağı.<br>Sep 2025 – Jul 2026</p>
+        <p class="outcome">Do data augmentation methods improve accuracy through the same mechanism?</p>
         <p><strong>Question:</strong> Augmentation reliably improves image classification, but why it helps is rarely measured. I compared seven configurations (baseline, traditional, Cutout, Random Erasing, Mixup, CutMix, Mixup+CutMix) on CIFAR-10 and CIFAR-100 with ResNet-18, using four explainability lenses at once: multi-layer Grad-CAM, attention entropy and coverage, silhouette analysis of the 512-dimensional feature space, and occlusion sensitivity. 42 training runs (7 methods × 2 datasets × 3 seeds), all under identical hyperparameters.</p>
         <p><strong>Findings:</strong></p>
         <ul class="bullets findings">
@@ -69,8 +72,8 @@
       </div>
     </section>
 
-    <section id="next">
-      <h2>What I want to work on next</h2>
+    <section id="future-work">
+      <h2>Future work</h2>
       <div>
         <p>I want to bring the same multi-angle skepticism to language models: checking whether attribution-based and representation-based explanations of an LLM agree, and using interpretability to detect and understand unsafe behavior such as backdoors, instead of trusting a single signal.</p>
       </div>
@@ -104,11 +107,37 @@
 
     <section id="industry">
       <h2>Industry experience</h2>
-      <ul class="rows">
-        <li class="row"><span>Turkcell, Service Reliability Engineering Intern</span><span class="when">Aug–Sep 2025</span></li>
-        <li class="row"><span>Yıldız Holding, Enterprise Solutions Intern (SAP SD/MM)</span><span class="when">Jun–Jul 2025</span></li>
-        <li class="row"><span>Atlantis Otomasyon, Software Engineering Intern</span><span class="when">Jun–Sep 2024</span></li>
-      </ul>
+      <div>
+        <article>
+          <div class="row">
+            <h3>Turkcell, Service Reliability Engineering Intern</h3>
+            <span class="when">Aug–Sep 2025</span>
+          </div>
+          <ul class="bullets">
+            <li>Worked on machine learning and service reliability tasks at one of Türkiye's largest telecom companies.</li>
+            <li>Examined Jenkins CI/CD pipelines; found and reported a UI defect on the live customer-facing website.</li>
+          </ul>
+        </article>
+        <article>
+          <div class="row">
+            <h3>Yıldız Holding, Enterprise Solutions Intern</h3>
+            <span class="when">Jun–Jul 2025</span>
+          </div>
+          <ul class="bullets">
+            <li>Supported SAP SD/MM sales, procurement and inventory workflows at the owner of Godiva and Ülker.</li>
+          </ul>
+        </article>
+        <article>
+          <div class="row">
+            <h3>Atlantis Otomasyon, Software Engineering Intern</h3>
+            <span class="when">Jun–Sep 2024</span>
+          </div>
+          <ul class="bullets">
+            <li>Built a full-stack Python application for meteorological data collection and reporting.</li>
+            <li>Added threshold-based and statistical outlier detection that discarded or flagged faulty sensor readings.</li>
+          </ul>
+        </article>
+      </div>
     </section>
 
     <section id="leadership">

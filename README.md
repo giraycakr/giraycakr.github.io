@@ -37,20 +37,12 @@ All content is in `index.html`. After any edit, update the `Last updated` line i
 </article>
 ```
 
-**Add a one-line entry.** Copy a row in `#industry`:
+**Add an industry entry.** Copy an `<article>` in `#industry`. It has the same form as a project, without the outcome line.
 
-```html
-<li class="row"><span>Organization, role</span><span class="when">Dates</span></li>
-```
-
-**Add the CV.** Put the file at `cv.pdf` in the repo root, then add this to the links list in the header:
-
-```html
-<li><a href="cv.pdf">CV (PDF)</a></li>
-```
+**Add the CV.** Put the file at `cv.pdf` in the repo root. The header already links to it, so add the file before pushing or the link returns a 404.
 
 **Add the photo.** Put a square JPEG at `assets/photo.jpg` (about 400 x 400 px). It replaces the initials automatically, with no HTML change.
 
 ## Style
 
-Colors for light and dark mode are the variables at the top of `style.css`. Keep the whole site small: no external fonts, scripts or trackers.
+The site is light only. Colors are the variables at the top of `style.css`. Keep the whole site small: no external fonts, scripts or trackers.

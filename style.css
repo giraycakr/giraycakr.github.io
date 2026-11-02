@@ -1,21 +1,11 @@
 /* A: classic academic. Sans, dense rows, labels in a left column. */
 :root {
-  color-scheme: light dark;
+  color-scheme: light;
   --bg: #fff;
   --text: #1d1f21;
   --muted: #5c6369;
   --accent: #1c5aa0;
   --rule: #e4e6e8;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #121315;
-    --text: #e6e7e8;
-    --muted: #a3a9af;
-    --accent: #8ab6ec;
-    --rule: #2c2f33;
-  }
 }
 
 *,
@@ -159,10 +149,6 @@ section ul + p {
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 0 1rem;
-}
-
-.rows li + li {
-  margin-top: 0.125rem;
 }
 
 .outcome {

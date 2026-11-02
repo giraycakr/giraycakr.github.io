@@ -1,6 +1,6 @@
 # giraycakr.github.io
 
-Personal academic homepage. Plain HTML and one CSS file, with no framework, build step or JavaScript. GitHub Pages serves the root of `main`. The previous site is kept in the `old-site` branch.
+Personal academic homepage. Plain HTML and one CSS file, with no framework or build step. The only JavaScript is the Umami Cloud analytics script in `<head>`. GitHub Pages serves the root of `main`. The previous site is kept in the `old-site` branch.
 
 ## Preview locally
 
@@ -45,4 +45,4 @@ All content is in `index.html`. After any edit, update the `Last updated` line i
 
 ## Style
 
-The site is light only. Colors are the variables at the top of `style.css`. Keep the whole site small: no external fonts, scripts or trackers.
+The site is light only. Colors are the variables at the top of `style.css`. Keep the whole site small: no external fonts, and no scripts or trackers beyond the Umami Cloud analytics script.
